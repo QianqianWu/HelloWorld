@@ -20,6 +20,8 @@
 		CEE9A29C14283E99003608ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEE9A29A14283E99003608ED /* InfoPlist.strings */; };
 		CEE9A29F14283E99003608ED /* HelloWorldTests.h in Resources */ = {isa = PBXBuildFile; fileRef = CEE9A29E14283E99003608ED /* HelloWorldTests.h */; };
 		CEE9A2A114283E99003608ED /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9A2A014283E99003608ED /* HelloWorldTests.m */; };
+		CEEC6BF51428429700C510DD /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC6BF31428429700C510DD /* MyViewController.m */; };
+		CEEC6BF61428429700C510DD /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEC6BF41428429700C510DD /* MyViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,19 +39,22 @@
 		CEE9A27714283E98003608ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEE9A27914283E98003608ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEE9A27B14283E98003608ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CEE9A27F14283E99003608ED /* HelloWorld-Info.plist */ = {isa = PBXFileReference; path = "HelloWorld-Info.plist"; sourceTree = "<group>"; };
+		CEE9A27F14283E99003608ED /* HelloWorld-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloWorld-Info.plist"; sourceTree = "<group>"; };
 		CEE9A28114283E99003608ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CEE9A28314283E99003608ED /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
+		CEE9A28314283E99003608ED /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
 		CEE9A28414283E99003608ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CEE9A28614283E99003608ED /* HelloWorldAppDelegate.h */ = {isa = PBXFileReference; path = HelloWorldAppDelegate.h; sourceTree = "<group>"; };
+		CEE9A28614283E99003608ED /* HelloWorldAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldAppDelegate.h; sourceTree = "<group>"; };
 		CEE9A28714283E99003608ED /* HelloWorldAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldAppDelegate.m; sourceTree = "<group>"; };
 		CEE9A28A14283E99003608ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		CEE9A29114283E99003608ED /* HelloWorldTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEE9A29914283E99003608ED /* HelloWorldTests-Info.plist */ = {isa = PBXFileReference; path = "HelloWorldTests-Info.plist"; sourceTree = "<group>"; };
+		CEE9A29914283E99003608ED /* HelloWorldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloWorldTests-Info.plist"; sourceTree = "<group>"; };
 		CEE9A29B14283E99003608ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CEE9A29D14283E99003608ED /* HelloWorldTests-Prefix.pch */ = {isa = PBXFileReference; path = "HelloWorldTests-Prefix.pch"; sourceTree = "<group>"; };
+		CEE9A29D14283E99003608ED /* HelloWorldTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorldTests-Prefix.pch"; sourceTree = "<group>"; };
 		CEE9A29E14283E99003608ED /* HelloWorldTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldTests.h; sourceTree = "<group>"; };
 		CEE9A2A014283E99003608ED /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
+		CEEC6BF21428429700C510DD /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyViewController.h; path = ../MyViewController.h; sourceTree = "<group>"; };
+		CEEC6BF31428429700C510DD /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyViewController.m; path = ../MyViewController.m; sourceTree = "<group>"; };
+		CEEC6BF41428429700C510DD /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyViewController.xib; path = ../MyViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,9 @@
 		CEE9A27D14283E98003608ED /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC6BF21428429700C510DD /* MyViewController.h */,
+				CEEC6BF31428429700C510DD /* MyViewController.m */,
+				CEEC6BF41428429700C510DD /* MyViewController.xib */,
 				CEE9A28614283E99003608ED /* HelloWorldAppDelegate.h */,
 				CEE9A28714283E99003608ED /* HelloWorldAppDelegate.m */,
 				CEE9A28914283E99003608ED /* MainWindow.xib */,
@@ -216,6 +224,7 @@
 			files = (
 				CEE9A28214283E99003608ED /* InfoPlist.strings in Resources */,
 				CEE9A28B14283E99003608ED /* MainWindow.xib in Resources */,
+				CEEC6BF61428429700C510DD /* MyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 			files = (
 				CEE9A28514283E99003608ED /* main.m in Sources */,
 				CEE9A28814283E99003608ED /* HelloWorldAppDelegate.m in Sources */,
+				CEEC6BF51428429700C510DD /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +435,7 @@
 				CEE9A2A614283E99003608ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEE9A2A714283E99003608ED /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +444,7 @@
 				CEE9A2A914283E99003608ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
