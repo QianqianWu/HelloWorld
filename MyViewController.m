@@ -10,6 +10,9 @@
 
 
 @implementation MyViewController
+@synthesize textField;
+@synthesize label;
+@synthesize userName;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,6 +25,9 @@
 
 - (void)dealloc
 {
+    [textField release];
+    [label release];
+    [userName release];
     [super dealloc];
 }
 
@@ -43,6 +49,8 @@
 
 - (void)viewDidUnload
 {
+    [self setTextField:nil];
+    [self setLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -54,4 +62,22 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)theTextField{
+    if (theTextField==self.textField) {
+        [theTextField resignFirstResponder];
+    }
+    return YES;
+}
+
+- (IBAction)changeGreetings:(id)sender {
+    
+    self.userName = self.textField.text;
+    NSString *nameString = self.userName;
+    if ([nameString length]==0) {
+        nameString = @"World";
+    }
+    NSString *Greetings=[[NSString alloc] initWithFormat:@"Hello, %@!", nameString];
+    self.label.text=Greetings;
+    [Greetings release];
+}
 @end
